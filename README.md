@@ -35,18 +35,18 @@ En primer lugar, una clase Torneo, con atributos como idTorneo(PK), y tres lista
 
 Relacionadas con esta clase principal Torneo, con una relación de composición, es decir, un torneo esta compuesto de: 
 
-. Equipo: Cada torneo tiene muchos o varios equipos, y esta clase tiene atributo como idEquipo(PK), nombreEquipo, nombreEntrenador y una lista con sus jugadores. Sus métodos son mostrarJugadores(), añadir o eliminar un jugador, y cambiarEntrenador().
-. Clasificación: Cada torneo tiene una clasificación única, con atributos como una lista con los equipos que la componen, los puntos de clasificación de cada equipo, y la posición de cada equipo. En cuanto a los métodos tenemos los de mostrar o modificar la clasificación, y sumar o restar puntos a los equipos dentro de ella, lo cual ira modificando su posición dentro de la clasificación.
-. Partido: Cada torneo tiene muchos partidos, con los atributos de idPartido(PK), y luego guardaría la fecha, resultado y los equipos de cada uno de los partidos. Sus métodos serían registrarResultado(), asignarPuntos() o generarEstadisticas().
-. Administrador: Cada torneo tiene un administrador, con solamente el atributo idAdmin(PK), el cual tendrá los métodos de consultar equipo, jugador y clasificación y entrega de premios.
+- Equipo: Cada torneo tiene muchos o varios equipos, y esta clase tiene atributo como idEquipo(PK), nombreEquipo, nombreEntrenador y una lista con sus jugadores. Sus métodos son mostrarJugadores(), añadir o eliminar un jugador, y cambiarEntrenador().
+- Clasificación: Cada torneo tiene una clasificación única, con atributos como una lista con los equipos que la componen, los puntos de clasificación de cada equipo, y la posición de cada equipo. En cuanto a los métodos tenemos los de mostrar o modificar la clasificación, y sumar o restar puntos a los equipos dentro de ella, lo cual ira modificando su posición dentro de la clasificación.
+- Partido: Cada torneo tiene muchos partidos, con los atributos de idPartido(PK), y luego guardaría la fecha, resultado y los equipos de cada uno de los partidos. Sus métodos serían registrarResultado(), asignarPuntos() o generarEstadisticas().
+- Administrador: Cada torneo tiene un administrador, con solamente el atributo idAdmin(PK), el cual tendrá los métodos de consultar equipo, jugador y clasificación y entrega de premios.
 
 Dentro de equipo, el equipo está compuesto de dos clases, que son:
-. Jugador: con atributos como idJugador(PK) y nombreJugador. Sus métodos son solicitarEquipo y consultarEquipo().
-. Entrenador: con atributos como idEntrenador(PK), y nombreEntrenador. Sus métodos son inscribirJugador(), solicitarJugador(), consultarEquipo(), y registrarEquipo().
+- Jugador: con atributos como idJugador(PK) y nombreJugador. Sus métodos son solicitarEquipo y consultarEquipo().
+- Entrenador: con atributos como idEntrenador(PK), y nombreEntrenador. Sus métodos son inscribirJugador(), solicitarJugador(), consultarEquipo(), y registrarEquipo().
 
 A raíz de la clase partido, tenemos:
-. Estadísticas: que guarda estadísticas de los partidos como los goles marcados por un equipo o un jugador, goles por partido, asistencias o tarjetas por jugador. Sus métodos son de consulta de estas estadísticas.
-. Resultado: Clase con depencia de Partido, ya que si no hay partido no hay resultado. Esta clase guarda atributos como ganador o perdedor de este. Sus métodos son establecer ganador o perdedor, y asignarPuntos().
+- Estadísticas: que guarda estadísticas de los partidos como los goles marcados por un equipo o un jugador, goles por partido, asistencias o tarjetas por jugador. Sus métodos son de consulta de estas estadísticas.
+- Resultado: Clase con depencia de Partido, ya que si no hay partido no hay resultado. Esta clase guarda atributos como ganador o perdedor de este. Sus métodos son establecer ganador o perdedor, y asignarPuntos().
 
 ## Conclusiones 
 
